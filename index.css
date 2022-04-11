@@ -51,6 +51,18 @@ img {
 	text-align: center;
 }
 
+.credits {
+	float: left;
+	position: relative;
+	bottom: 5vh;
+}
+
+.scrap {
+	float: right;
+	position: relative;
+	bottom: 5vh;
+}
+
 #sidePanelButton {
 	background: #191970;
 	width: 10vh;
@@ -59,6 +71,7 @@ img {
 	float: left;
 	z-index: 2;
 	position: absolute;
+	right: 10vh;
 }
 
 #sidePanel {
@@ -90,6 +103,11 @@ img {
 }
 
 .o1, .o2, .o3, .o4, .o5 h1 {
+	height: 20vh;
+	line-height: 20vh;
+}
+
+.o1, .o2, .o3, .o4, .o5 h3 {
 	height: 20vh;
 	line-height: 20vh;
 }

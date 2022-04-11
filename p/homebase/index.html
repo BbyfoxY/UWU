@@ -8,7 +8,7 @@
 		<link href = '/index.css' rel = 'stylesheet'></link>
         <link href = './index.css' rel = 'stylesheet'></link>
 	</head>
-	<body>
+	<body onload = 'Javascript:load();'>
 		<div id = 'topBar'>
 			<strong><h1 class = 'unselectable'>UWU</h1></strong>
 			<h2 class = 'unselectable'>Unnamed Web Universe</h2>
@@ -18,23 +18,23 @@
 			<a href = '#'><h1 class = 'unselectable'>Settings</h1></a>
 		</div>
 		<div class = 'game' id = 'gameHo'>
-            <div class = 'o1' onclick = "console.log('sell scrap');">
+            <div class = 'o1'>
                 <h1 class = 'unselectable'>Sell Scrap</h1>
             </div>
             <div class = 'o2'>
                 <h1 class = 'unselectable'>Buy Items</h1>
             </div>
             <div class = 'o3'>
-                <h1 class = 'unselectable'>Upgrades</h1>
+                <h3 class = 'unselectable'>Increase ClickPow</h3>
             </div>
             <div class = 'o4'>
                 <h1 class = 'unselectable'>Gamble</h1>
             </div>
             <div class = 'o5'>
-                <h1 class = 'unselectable'> C</h1>
+                <h1 class = 'unselectable'> Collect Scrap</h1>
             </div>
 		</div>
-		<script src = '/script.js'></script>
-        <script src = './script.js'></script>
+		<script src = '/script.js' type = 'module'></script>
+        <script src = './script.js' type = 'module'></script>
 	</body>
 </html>
