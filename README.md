@@ -1,2 +1,2 @@
-# unnamedWebGame
-(WIP) Unnamed web game that will (hopefully) turn out pretty good https://github.com/BbyfoxY
+<h1 align = 'center'>💖UWU💖</h1>
+<p align = 'center'>(Unnamed Web Universe)</p>

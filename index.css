@@ -1,0 +1,113 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-size: default;
+}
+
+*.unselectable {
+   -moz-user-select: -moz-none;
+   -khtml-user-select: none;
+   -webkit-user-select: none;
+
+   /*
+     Introduced in IE 10.
+     See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/
+   */
+   -ms-user-select: none;
+   user-select: none;
+}
+
+body {
+	background-image: url(./src/bg.jpg);
+	font-family: 'Ubuntu';
+	color: #ffffff;
+	background-size: cover;
+}
+
+body a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+body button {
+	color: #ffffff;
+}
+
+img { 
+    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated; /* Chrome */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+
+}
+
+#topBar {
+	background: #191970;
+	width: 100%;
+	height: 10vh;
+	text-align: center;
+}
+
+#sidePanelButton {
+	background: #191970;
+	width: 10vh;
+	height: 10vh;
+	margin: auto;
+	float: left;
+	z-index: 2;
+	position: absolute;
+}
+
+#sidePanel {
+	display: none;
+	float: left;
+	background: #191970;
+	text-align: center;
+	width: 20%;
+	height: 100vh;
+	z-index: 2;
+}
+
+.game {
+	width: 50%;
+	height: 70vh;
+	position: absoulte;
+	margin: auto;
+	left: 0;
+	right: 0;
+	padding: 2.5vh;
+}
+
+.o1, .o2, .o3, .o4{
+	background: #191970;
+	width: 25%;
+	height: 20vh;
+	text-align: center;
+	float: left;
+}
+
+.o1, .o2, .o3, .o4 h1 {
+	height: 20vh;
+	line-height: 20vh;
+}
+
+.o2 {
+	float: right;
+}
+
+.o3 {
+	float: left;
+	position: relative;
+	top: 50vh;
+	right: 25%;
+}
+
+.o4 {
+	float: right;
+	position: relative;
+	top: 50vh;
+	left: 25%;
+}
