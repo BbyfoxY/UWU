@@ -81,7 +81,7 @@ img {
 	padding: 2.5vh;
 }
 
-.o1, .o2, .o3, .o4{
+.o1, .o2, .o3, .o4, .o5 {
 	background: #191970;
 	width: 25%;
 	height: 20vh;
@@ -89,7 +89,7 @@ img {
 	float: left;
 }
 
-.o1, .o2, .o3, .o4 h1 {
+.o1, .o2, .o3, .o4, .o5 h1 {
 	height: 20vh;
 	line-height: 20vh;
 }
@@ -110,4 +110,17 @@ img {
 	position: relative;
 	top: 50vh;
 	left: 25%;
+}
+
+.o5 {
+	float: none;
+	position: relative;
+	top: 25vh;
+	left: 37.5%;
+}
+
+.o5 h1 {
+	float: none;
+	position: relative;
+	bottom: 20vh;
 }
