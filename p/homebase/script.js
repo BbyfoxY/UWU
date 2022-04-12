@@ -7,7 +7,7 @@ var c = document.getElementById('credits');
 var s = document.getElementById('scrap');
 
 function collectScrap() {
-    scrap += clickPow;
+    changeVar('scrap', scrap + clickPow);
     s.innerText = 'S: ' + scrap;
 }
 window.collectScrap = collectScrap;
