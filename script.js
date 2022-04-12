@@ -8,6 +8,22 @@ export var credits = 0;
 export var scrap = 0;
 export var clickPow = 1;
 
+export function changeVar(variable, value) {
+	switch (variable) {
+		case credits:
+			credits = value;
+			break;
+		case scrap:
+			scrap = value;
+			break;
+		case clickPow:
+			clickPow = value;
+			break;
+		default:
+			break;
+	}
+}
+
 function sidePanel() {
 	if (buttonPressed === false) {
 		sp.style.display = 'block';
