@@ -37,7 +37,6 @@ function sidePanel() {
 		buttonPressed = false;
 	}
 }
-window.sidePanel = sidePanel;
 
 function save() {
 	localStorage.setItem('c', credits);

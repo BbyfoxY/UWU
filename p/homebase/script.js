@@ -5,9 +5,13 @@ import { changeVar } from '/UWU/script';
 
 var c = document.getElementById('credits');
 var s = document.getElementById('scrap');
+var o5 = document.getElementsByClassName('o5');
+
+o5.addEventListener('click', () => {
+    collectScrap();
+});
 
 function collectScrap() {
     changeVar('scrap', scrap + clickPow);
     s.innerText = 'S: ' + scrap;
 }
-window.collectScrap = collectScrap;
