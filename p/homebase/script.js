@@ -9,3 +9,4 @@ function collectScrap() {
     scrap += clickPow;
     s.innerText = 'S: ' + scrap;
 }
+window.collectScrap = collectScrap;
