@@ -5,7 +5,7 @@ var buttonPressed = false;
 var c = document.getElementsByClassName('credits');
 var s = document.getElementsByClassName('scrap');
 
-export function sidePanel() {
+function sidePanel() {
 	if (buttonPressed === false) {
 		sp.style.display = 'block';
 		spb.style.float = 'none';
@@ -19,7 +19,7 @@ export function sidePanel() {
 	}
 }
 
- export function load() {
+function load() {
 	if (localStorage.getItem('c') === null) {
 		localStorage.setItem('c', 0);
 	}
@@ -29,4 +29,7 @@ export function sidePanel() {
 	if (localStorage.getItem('cp') === null) {
 		localStorage.setItem('cp', 1);
 	}
+	console.log('sus');
 }
+
+load();
