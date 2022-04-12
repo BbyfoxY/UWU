@@ -6,7 +6,7 @@ import { changeVar } from '/UWU/script.js';
 var c = document.getElementById('credits');
 var s = document.getElementById('scrap');
 
-document.querySelector('.o5').addEventListener('click', collectScrap());
+document.querySelector('#o5').addEventListener('click', collectScrap());
 
 function collectScrap() {
     changeVar('scrap', scrap + clickPow);
