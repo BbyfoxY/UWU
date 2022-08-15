@@ -1,0 +1,6 @@
+use google analytics once the site goes up for v1.0
+release new aliens in generations that can be from 8 new aliens to 80 new aliens
+first generation can have 80+ aliens
+scrap to credits is - 2 : 1
+each alien gives 10^(rarity) every second (EX. Wealthy: 10sps Herbivores: 100sps Carnivores: 1Msps)
+punnet square breeding of aliens with dominant and recessive rarities

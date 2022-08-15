@@ -2,25 +2,191 @@ var sp = document.getElementById('sidePanel');
 var spb = document.getElementById('sidePanelButton');
 var buttonPressed = false;
 
-var c = document.getElementById('credits');
-var s = document.getElementById('scrap');
+spb.addEventListener('click', () => {
+	sidePanel();
+});
+
+var c = document.getElementById('creditsV');
+var s = document.getElementById('scrapV');
 export var credits = 0;
 export var scrap = 0;
 export var clickPow = 1;
+export var inClickPowPrice = 1000;
 
-export function changeVar(variable, value) {
+export function changeVar(variable, amount) {
 	switch (variable) {
-		case credits:
-			credits = value;
+		case 'credits':
+			credits = amount;
 			break;
-		case scrap:
-			scrap = value;
+		case 'scrap':
+			scrap = amount;
 			break;
-		case clickPow:
-			clickPow = value;
+		case 'clickPow':
+			clickPow = amount;
+			break;
+		case 'inClickPowPrice':
+			inClickPowPrice = amount;
 			break;
 		default:
 			break;
+	}
+}
+
+export function compactNum(num) {
+	let comb = 0;
+	let com = 0;
+	if (num >= 1000) {
+		num /= 1000;
+		if (num >= 1000) {
+			num /= 1000;
+			if (num >= 1000) {
+				num /= 1000;
+				if (num >= 1000) {
+					num /= 1000;
+					if (num >= 1000) {
+						num /= 1000;
+						if (num >= 1000) {
+							num /= 1000;
+							if (num >= 1000) {
+								num /= 1000;
+								if (num >= 1000) {
+									num /= 1000;
+									if (num >= 1000) {
+										num /= 1000;
+										if (num >= 1000) {
+											num /= 1000;
+											if (num >= 1000) {
+												num /= 1000;
+												if (num >= 1000) {
+													num /= 1000;
+													if (num >= 1000) {
+														num /= 1000;
+														if (num >= 1000) {
+															num /= 1000;
+															if (num >= 1000) {
+																num /= 1000;
+																if (num >= 1000) {
+																	num /= 1000;
+																	if (num >= 1000) {
+																		num /= 1000;
+																		if (num >= 1000) {
+																			num /= 1000;
+																			if (num >= 1000) {
+																				num /= 1000;
+																				if (num >= 1000) {
+																					num /= 1000;
+																					if (num >= 1000) {
+																						num /= 1000;
+																						if (num >= 1000) {
+																							com = 'If you see this then you are cheating or need to stop playing...';
+																							return com;
+																						} else {
+																							comb = Math.trunc(num * Math.pow(10, 2)) / Math.pow(10, 2);
+																							com = comb + ' Vigintillion'; 
+																							return com;
+																						}
+																					} else {
+																						comb = Math.trunc(num * Math.pow(10, 2)) / Math.pow(10, 2);
+																						com = comb + ' Novemdecillion'; 
+																						return com;
+																					}
+																				} else {
+																					comb = Math.trunc(num * Math.pow(10, 2)) / Math.pow(10, 2);
+																					com = comb + ' Octodecillion';
+																					return com;
+																				}
+																			} else {
+																				comb = Math.trunc(num * Math.pow(10, 2)) / Math.pow(10, 2);
+																				com = comb + ' Septen-decillion'; 
+																				return com;
+																			}
+																		} else {
+																			comb = Math.trunc(num * Math.pow(10, 2)) / Math.pow(10, 2);
+																			com = comb + ' Sexdecillion'; 
+																			return com;
+																		}
+																	} else {
+																		comb = Math.trunc(num * Math.pow(10, 2)) / Math.pow(10, 2);
+																		com = comb + ' Quindecillion'; 
+																		return com;
+																	}
+																} else {
+																	comb = Math.trunc(num * Math.pow(10, 2)) / Math.pow(10, 2);
+																	com = comb + ' Quattuordecillion'; 
+																	return com;
+																}
+															} else {
+																comb = Math.trunc(num * Math.pow(10, 2)) / Math.pow(10, 2);
+																com = comb + ' Tredecillion'; 
+																return com;
+															}
+														} else {
+															comb = Math.trunc(num * Math.pow(10, 2)) / Math.pow(10, 2);
+															com = comb + ' Duodecillion'; 
+															return com;
+														}
+													} else {
+														comb = Math.trunc(num * Math.pow(10, 2)) / Math.pow(10, 2);
+														com = comb + ' Undecillion'; 
+														return com;
+													}
+												} else {
+													comb = Math.trunc(num * Math.pow(10, 2)) / Math.pow(10, 2);
+													com = comb + ' Decillion'; 
+													return com;
+												}
+											} else {
+												comb = Math.trunc(num * Math.pow(10, 2)) / Math.pow(10, 2);
+												com = comb + ' Nonillion'; 
+												return com;
+											}
+										} else {
+											comb = Math.trunc(num * Math.pow(10, 2)) / Math.pow(10, 2);
+											com = comb + ' Octillion'; 
+											return com;
+										}
+									} else {
+										comb = Math.trunc(num * Math.pow(10, 2)) / Math.pow(10, 2);
+										com = comb + ' Septillion'; 
+										return com;
+									}
+								} else {
+									comb = Math.trunc(num * Math.pow(10, 2)) / Math.pow(10, 2);
+									com = comb + ' Sextillion'; 
+									return com;
+								}
+							} else {
+								comb = Math.trunc(num * Math.pow(10, 2)) / Math.pow(10, 2);
+								com = comb + ' Quintillion'; 
+								return com;
+							}
+						} else {
+							comb = Math.trunc(num * Math.pow(10, 2)) / Math.pow(10, 2);
+							com = comb + ' Quadrillion'; 
+							return com;
+						}
+					} else {
+						comb = Math.trunc(num * Math.pow(10, 2)) / Math.pow(10, 2);
+						com = comb + 'T'; 
+						return com;
+					}
+				} else {
+					comb = Math.trunc(num * Math.pow(10, 2)) / Math.pow(10, 2);
+					com = comb + 'B'; 
+					return com;
+				}
+			} else {
+				comb = Math.trunc(num * Math.pow(10, 2)) / Math.pow(10, 2);
+				com = comb + 'M'; 
+				return com;
+			}
+		} else {
+			comb = Math.trunc(num * Math.pow(10, 2)) / Math.pow(10, 2);
+			com = comb + 'K'; 
+			return com;
+		}
+	} else {
+		return parseInt(num);
 	}
 }
 
@@ -42,27 +208,36 @@ function save() {
 	localStorage.setItem('c', credits);
 	localStorage.setItem('s', scrap);
 	localStorage.setItem('cp', clickPow);
-}
-
-function load() {
-	if (localStorage.getItem('c') === null) {
-		localStorage.setItem('c', 0);
-	}
-	if (localStorage.getItem('s') === null) {
-		localStorage.setItem('s', 0);
-	}
-	if (localStorage.getItem('cp') === null) {
-		localStorage.setItem('cp', 1);
-	}
-	c.textContent = 'C: ' + localStorage.getItem('c');
-	s.textContent = 'S: ' + localStorage.getItem('s');
+	localStorage.setItem('icpp', inClickPowPrice);
 	credits = localStorage.getItem('c');
 	scrap = localStorage.getItem('s');
 	clickPow = localStorage.getItem('cp');
+	inClickPowPrice = localStorage.getItem('icpp');
+}
+
+function load() {
+	if (localStorage.getItem('c') === null || localStorage.getItem('c') === NaN) {
+		localStorage.setItem('c', 0);
+	}
+	if (localStorage.getItem('s') === null || localStorage.getItem('s') === NaN) {
+		localStorage.setItem('s', 0);
+	}
+	if (localStorage.getItem('cp') === null || localStorage.getItem('cp') === NaN) {
+		localStorage.setItem('cp', 1);
+	}
+	if (localStorage.getItem('icpp') === null || localStorage.getItem('icpp') === NaN) {
+		localStorage.setItem('icpp', 1000);
+	}
+	c.textContent = compactNum(localStorage.getItem('c'));
+	s.textContent = compactNum(localStorage.getItem('s'));
+	credits = localStorage.getItem('c');
+	scrap = localStorage.getItem('s');
+	clickPow = localStorage.getItem('cp');
+	inClickPowPrice = localStorage.getItem('icpp');
 }
 
 setInterval(() => {
 	save();
-}, 250);
+}, 500);
 
 load();

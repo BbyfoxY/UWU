@@ -4,15 +4,15 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-		<link href = './index.css' rel = 'stylesheet'></link>
 		<title>UWU</title>
+		<link href = './index.css' rel = 'stylesheet'>
 	</head>
 	<body>
 		<div id = 'topBar'>
-			<strong><h1 class = 'unselectable'>UWU</h1></strong>
-			<h2 class = 'unselectable'>Unnamed Web Universe</h2>
-			<h2 id = 'credits' class = 'unselectable'>C: 0</h2>
-			<h2 id = 'scrap' class = 'unselectable'>S: 0</h2>
+			<strong><h1 class = 'unselectable'><a href = '/'>UWU</a></h1></strong>
+			<h2 class = 'unselectable'><a href = '/'>Unnamed Web Universe</a></h2>
+			<h2 id = 'credits' class = 'unselectable'>C: <span id = 'creditsV'></span></h2>
+			<h2 id = 'scrap' class = 'unselectable'>S: <span id = 'scrapV'></span></h2>
 		</div>
 		<button id = 'sidePanelButton'><h1 class = 'unselectable'>></h1></button>
 		<div id = 'sidePanel'>
@@ -23,13 +23,16 @@
 				<h1 class = 'unselectable'>Homebase</h1>
 			</div>
 			<div class = 'o2'>
-				<h1 class = 'unselectable'>Aliens</h1>
+				<h1 class = 'unselectable'>Marketplace</h1>
 			</div>
 			<div class = 'o3'>
-				<h1 class = 'unselectable'>C&B Aliens</h1>
+				<h1 class = 'unselectable'>View Aliens</h1>
 			</div>
-			<div class = 'o4'>
-				<h1 class = 'unselectable'>Train Aliens</h1>
+			<div class = 'o4' onclick = "location.href = './p/capture&Breed/';">
+				<h3 class = 'unselectable'>Capture & Breed</h3>
+			</div>
+			<div class = 'o5'>
+				<h1 class = 'unselectable'>~ BATTLE ~</h1>
 			</div>
 		</div>
 		<script src = './script.js' type = 'module'></script>

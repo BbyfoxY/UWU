@@ -1,0 +1,75 @@
+#gameCnB {
+    text-align: center;
+}
+
+.box {
+    width: 140px;
+    height: 140px;
+    text-align: center;
+    float: left;
+    position: relative;
+}
+
+.box h1 {
+    width: 140px;
+    height: 140px;
+    line-height: 140px;
+}
+
+#box1 {
+    top: 35px;
+    left: 35px;
+    background: #33dd33;
+}
+
+#box2 {
+    top: 35px;
+    left: 165px;
+    background: #3333dd;
+}
+
+#box3 {
+    top: 35px;
+    float: right; 
+    right: 35px;
+    background: #ffaa55;
+}
+
+#box4 {
+    top: 210px;
+    right: 245px;
+    background: #880088;
+}
+
+#box5 {
+    top: 210px;
+    right: 115px;
+    background: #dd3333;
+}
+
+#box6 {
+    top: 70px;
+    float: right;
+    right: 40px;
+    background: #ffff00;
+}
+
+#box7 {
+    top: 245px;
+    left: 305px;
+    background: #222222;
+}
+
+#boxName {
+    position: relative;
+    bottom: 35px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #222222;
+}
+
+#boxNameSpecial {
+    position: relative;
+    bottom: 35px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffffff;
+}
